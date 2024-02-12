@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Weather </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="search">
+    <input type="text" placeholder="City, Country">
+    <button> Search </button>
+  </div>
+  <section id="live">
+    <div class="title">
+      <h2> Now </h2>
+      <img src="./icons8-live-96.png"> 
+    </div>
+    <div class="current-container">
+      <div class="temperature">
+        <img src="./asset/weather-icons-master/design/fill/animation-ready/drizzle.svg" class="icon">
+        <h1></h1>
+      </div>
+      <div class="condition">
+        <h4></h4>
+        <h5 class="fade"></h5>
+      </div>
+
+      <div class="location">
+        <h3></h3>
+        <h4 class="city"></h4>
+        <h3 class="country"></h3>
+      </div>
+
+      <div class="time">
+        <h5></h5>
+        <h5 class="fade"></h5>
+      </div>
+    </div>
+
+    <div class="information">
+      <div id="uv">
+        <div class="icon-wrapper">
+          <img class="icon" src="./icons8-sun-200.png">
+          <h4> UV Index </h4>
+        </div>
+        <h4></h4>
+      </div>
+      <div id="wind">
+        <div class="icon-wrapper">
+          <img class="icon" src="./icons8-wind-100.png">
+          <h4> Wind </h4>
+        </div>
+        <h4></h4>
+      </div>
+      <div id="rain">
+        <div class="icon-wrapper">
+          <img class="icon" src="./icons8-rain-64.png">
+          <h4> Rain </h4>
+        </div>
+        <h4> 20% </h4>
+      </div>
+      <div id="aqi">
+        <div class="icon-wrapper">
+          <img class="icon" src="./icons8-air-quality-96.png">
+          <h4> AQI </h4>
+        </div>
+        <h4> 277 </h4>
+      </div>
+      <div id="visibility">
+        <div class="icon-wrapper">
+          <img class="icon" src="./icons8-visibility-64.png">
+          <h4> Visibility </h4>
+        </div>
+        <h4> </h4>
+      </div>
+      <div id="humidity">
+        <div class="icon-wrapper">
+          <img class="icon" src="./icons8-humidity-80.png">
+          <h4> Humidity </h4>
+        </div>
+        <h4></h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="recommendations">
+    <div class="title">
+      <h2> Recommendations </h2>
+      <img src="./icons8-general-mandatory-action-100.png"> 
+    </div>
+
+    <div class="recommendations-container">
+    
+      <div id="clothing">
+        <div class="wrapper">
+          <img src="./icons8-jacket-100.png" class="icon">
+          <h4> Clothing </h4>
+        </div>
+        <p></p>
+      </div>
+      <div id="sun-protection">
+        <div class="wrapper">
+          <img src="./icons8-sun-cream-64.png" class="icon">
+          <h4> UV </h4>
+        </div>
+        <p></p>
+      </div>
+      <div id="outdoor">
+        <div class="wrapper">
+          <img src="./icons8-skiing-80.png" class="icon">
+          <h4> Outdoor </h4>
+        </div>
+        <p></p>
+      </div>
+      <div id="mask">
+        <div class="wrapper">
+          <img src="./icons8-face-mask-64.png" class="icon">
+          <h4> Mask </h4>
+        </div>
+        <p></p>
+      </div>
+      <div id="rain">
+        <div class="wrapper">
+          <img src="./icons8-umbrella-96.png" class="icon">
+          <h4> Umbrella </h4>
+        </div>
+        <p></p>
+      </div>
+      <div id="driving">
+        <div class="wrapper">
+          <img src="./icons8-steering-wheel-64.png" class="icon">
+          <h4> Driving </h4>
+        </div>
+        <p></p>
+      </div>
+      <div id="hydration">
+        <div class="wrapper">
+          <img src="./icons8-heat-64.png" class="icon">
+          <h4> Hydration </h4>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <dialog>
+
+  </dialog>
+
+  <script src="index.js">
+  </script>
+</body>
+</html>
+

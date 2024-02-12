@@ -1,0 +1,257 @@
+:root {
+    --primary-text-color: #242424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--primary-text-color);
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.019);
+    margin: 50px 10vw;
+    font-family: 'Poppins', sans-serif;
+    
+    display: grid;
+    grid-template-rows: 60px 1fr 1fr;
+    height: 100vh;
+}
+
+#live {
+    display: grid;
+    grid-template-columns: min-content 2fr;
+    grid-template-rows: 40px 1fr;
+    column-gap: 80px;
+}
+
+#recommendations {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr;
+}
+
+h1, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+#recommendations h4 {
+    text-align: center;
+    margin-top: 5px;
+}
+.current-container {
+    margin: 40px 0;
+    margin-right: auto;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    border: 1px solid #242424;
+    border-radius: 15px;
+    padding: 25px;
+    width: 450px;
+    height: 370px;
+    grid-row: 2 / -1;
+    grid-column: 1/2;
+    box-shadow: 0.5px 3px 10px #242424;
+}
+
+.information > div {
+
+    display: flex;
+    border: 1px solid #242424;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0.5px 3px 10px ;
+    height: min-content;
+}
+
+.information > div:hover {
+    background-color: rgba(14, 125, 222, 0.099);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.current-container:hover {
+    background-color: rgba(14, 125, 222, 0.099);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.current-container, .information > div {
+    transition: all 0.3s cubic-bezier(0.98, 1.04, 0.35, 1.31);
+
+}
+.search {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    height: 40px;
+    font-size: 24px;
+    padding-left: 10px;
+    color: var(--primary-text-color);
+    border-radius: 15px;
+}
+button {
+    height: 40px;
+    font-size: 24px;
+    margin-left: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0365ba65;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.98, 1.04, 0.35, 1.31);
+}
+
+#live > .title, #recommendations > .title {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    margin: auto 0;
+    font-size: 30px;
+}
+
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title > img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;;
+
+}
+
+.information {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
+    margin: 40px 0;
+    grid-row: 2 / -1;
+    grid-column: 2 / 3;
+    width: 60%;
+}
+
+.icon-wrapper > h4 {
+    text-align: center;
+}
+
+.information > div > h4 {
+    margin: auto auto;
+    max-width: 50%;
+    font-size: 24px;
+    flex-shrink: 1;
+    text-align: center;
+    word-wrap: break-word;
+}
+.icon {
+    height: 85px;
+    width: 85px;
+}
+.temperature {
+    margin: 0 -10px;
+    margin-bottom: -10px;
+    display: flex;
+}
+.icon-wrapper > .icon {
+    height: 75px;
+    width: 75px;
+}
+.location {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto 0;
+}
+
+.country {
+    font-weight: 500;
+}
+.location > :first-child {
+    font-weight: 700;
+    font-size: 36px;
+}
+h1 {
+    font-size: 72px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+.fade {
+    color: rgba(0, 0, 0, 0.40);
+}
+
+.time {
+    margin-top: auto;
+}
+
+.search {
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+.recommendations-container > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    gap: 20px;
+    padding: 10px 20px;
+    flex-grow: 0;
+    border: 1px solid #242424;
+    border-radius: 15px;
+    min-height: 150px;
+    box-shadow: 0.5px 3px 10px #242424;
+}
+
+.recommendations-container > div > p {
+    justify-self: center;
+}
+
+.recommendations-container {
+    padding-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.recommendations-container > div:hover {
+    background-color: rgba(14, 125, 222, 0.099);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.recommendations-container > div {
+    transition: all 0.3s cubic-bezier(0.98, 1.04, 0.35, 1.31);
+}
+
+.recommendations-container > div > p {
+    font-size: 22px;
+    margin: auto 0;
+    text-align: left;
+    font-weight: 500;
+}
